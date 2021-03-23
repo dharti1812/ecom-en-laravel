@@ -3,3 +3,28 @@
     height: 420px;
     padding: 100px 0 0 0;
 }
+img.slider-img{
+    height: 400px !important;
+}
+.customproduct{
+    height: 600px;
+}
+.carousel-caption{
+    background-color:burlywood;
+}
+.trending-img{
+    height: 100px;
+}
+.trending-item{
+    float: left;
+    width: 25%;
+}
+.trending-wrapper{
+    padding: 20px;
+}
+.detail-img{
+    height: 200px;
+}
+.search-box{
+    width:500px !important;
+}
