@@ -23,7 +23,8 @@ Route::get('/logout', function () {
     return view('login');
 });
 Route::post('/login',[UserController::class, 'login']);
-
+Route::post('/register',[UserController::class, 'register']);
+Route::view('/register','register');
 Route::get('/',[ProductController::class, 'index']);
 Route::get('detail/{id}',[ProductController::class, 'details']);
 Route::get('search',[ProductController::class, 'search']);
@@ -31,3 +32,9 @@ Route::get('search',[ProductController::class, 'search']);
 Route::post('add_to_cart',[ProductController::class, 'addtocart']);
 
 Route::get('cartlist',[ProductController::class, 'cartlist']);
+
+Route::get('removecart/{id}',[ProductController::class, 'removecart']);
+
+Route::get('ordernow',[ProductController::class, 'ordernow']);
+Route::post('orderplace',[ProductController::class, 'orderplace']);
+Route::get('myorders',[ProductController::class, 'myorders']);
